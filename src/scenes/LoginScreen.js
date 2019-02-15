@@ -6,14 +6,14 @@ import CardView from '../components/CardView';
 import Button from "../components/Button";
 
 export default class LoginScreen extends Component {
-
-    render(){
-        return (<CardView style={styles.container}>
-                         <AppText style={styles.logotext}>RMInno Credential</AppText>
-                         <EditText hint="Username" style={styles.edittext} />
-                         <EditText hint="Password" style={styles.edittext} />
-                         <Button title="Sign In" style={styles.button} onPress={() => { }} />
-                    </CardView>)
+  render(){
+    return (<CardView style={styles.container}>
+        <AppText style={styles.logotext}> RMInno Credential </AppText>
+        
+        <EditText hint="Username" style={styles.edittext} />
+        <EditText hint="Password" style={styles.edittext} />
+        <Button title="Sign In" style={styles.button} onPress={() => { }} />
+        </CardView>)
     }
 }
 
