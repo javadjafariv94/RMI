@@ -5,8 +5,6 @@ const CardView = ({ children, style }) => (
     <View style={[styles.containerStyle, style]}>{children}</View>
 );
 
-
-
 const styles = StyleSheet.create({
 
     containerStyle: {
