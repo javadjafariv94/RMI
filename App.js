@@ -5,8 +5,7 @@ import {
   View
 } from 'react-native';
 //import LoginScreen from './src/scenes/LoginScreen'
-import PrimaryNav from './src/navigation/PrimaryNav.js';
-import PrimaryNav from './src/navigation/PrimaryNav'
+import PrimaryNav from './src/navigation/PrimaryNav';
 export default class App extends Component {
   render() {
     return (

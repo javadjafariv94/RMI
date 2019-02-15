@@ -5,14 +5,16 @@ import AppText from "../components/AppText";
 import EditText from "../components/EditText";
 import Button from "../components/Button";
 
-export default class LoginScreen extends Component {
+export default class ForgetPassScreen extends Component {
     render() {
         return (<CardView style={styles.container}>
-            <AppText style={styles.logotext}>RMInno Credential</AppText>
-            <EditText hint="Username" style={styles.edittext} />
-            <EditText hint="Password" style={styles.edittext} />
-            <Button title="Sign In" style={styles.button} onPress={() => {this.props.navigation.navigate('vendrolist')}} />
-            <Button title="Forget Password" style={styles.forgetbutton} onPress={() => {this.props.navigation.navigate('forgetpass')}} />
+            <AppText style={styles.logotext}>Account Recovery</AppText>
+            <EditText inputType='phone-pad' hint="Please enter your phone number" style={styles.edittext} />
+            <AppText style={styles.text}>Get a verification code</AppText>
+            <View style={styles.row}>
+            <Button title="Text" style={styles.button} onPress={() => { }} />
+            <Button title="Call" style={styles.button} onPress={() => { }} />
+            </View>
         </CardView>)
     }
 }
@@ -28,7 +30,7 @@ const styles = StyleSheet.create({
     },
     button: {
         marginTop: 30,
-        width: 200,
+        width: 100,
         height: 40,
         backgroundColor: "#597eaa",
         color: 'white'
@@ -40,9 +42,17 @@ const styles = StyleSheet.create({
         backgroundColor: "transparent",
         color: 'black'
     },
+    row:{
+        flexDirection:'row'
+    },
     logotext: {
         fontSize: 20,
         fontWeight: 'bold',
+        color: '#597eaa',
+    },
+    text: {
+        fontSize: 18,
+        marginTop:20,
         color: '#597eaa',
     }
 

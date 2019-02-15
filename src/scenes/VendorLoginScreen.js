@@ -5,14 +5,14 @@ import AppText from "../components/AppText";
 import EditText from "../components/EditText";
 import Button from "../components/Button";
 
-export default class LoginScreen extends Component {
+export default class VendorLoginScreen extends Component {
     render() {
         return (<CardView style={styles.container}>
-            <AppText style={styles.logotext}>RMInno Credential</AppText>
+            <AppText style={styles.logotext}>Vendor </AppText>
             <EditText hint="Username" style={styles.edittext} />
             <EditText hint="Password" style={styles.edittext} />
-            <Button title="Sign In" style={styles.button} onPress={() => {this.props.navigation.navigate('vendrolist')}} />
-            <Button title="Forget Password" style={styles.forgetbutton} onPress={() => {this.props.navigation.navigate('forgetpass')}} />
+            <Button title="Sign In" style={styles.button} onPress={() => { }} />
+
         </CardView>)
     }
 }
@@ -46,4 +46,4 @@ const styles = StyleSheet.create({
         color: '#597eaa',
     }
 
-});
+}); 

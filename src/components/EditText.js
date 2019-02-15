@@ -12,10 +12,11 @@ export default class EditText extends Component{
   render(){
     return(
       <View style={styles.row}>
-        <AppText style={styles.label}>{this.props.hint}</AppText>
+        {/* <AppText style={styles.label}>{this.props.hint}</AppText> */}
         <TextInput
         underlineColorAndroid="transparent"
         keyboardType={this.props.inputType}
+        placeholder={this.props.hint}
         style={[styles.input,this.props.style]} 
         onChangeText={text => this.setState({ text})}
         value={this.props.text}
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     marginTop: 5,
     fontFamily: "Weblogma_Yekan",
-    textAlign: "left",
+   // textAlign: "left",
     textAlignVertical:'center',
     borderBottomColor: "#bdc3c7",
    
