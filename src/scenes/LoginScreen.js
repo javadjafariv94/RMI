@@ -11,11 +11,18 @@ export default class LoginScreen extends Component {
             <AppText style={styles.logotext}>RMInno Credential</AppText>
             <EditText hint="Username" style={styles.edittext} />
             <EditText hint="Password" style={styles.edittext} />
-            <Button title="Sign In" style={styles.button} 
-            onPress={() => this.props.navigation.navigate('vendorlist')} />
-            <Button title="Forget Password" style={styles.forgetbutton}
-             onPress={() => this.props.navigation.navigate('forgetpass')} />
-        </CardView>)
+            
+            <Button
+                style={styles.button}Î
+                onPress={() => { this.props.navigation.navigate('vendorlist') }}>
+                Sign In</Button>
+
+                <Button
+                style={styles.forgetbutton}Î
+                onPress={() => { this.props.navigation.navigate('forgetpass') }}>
+                Forget Password</Button>
+            
+             </CardView>)
     }
 }
 const styles = StyleSheet.create({
@@ -29,14 +36,16 @@ const styles = StyleSheet.create({
         width: 200,
     },
     button: {
-        marginTop: 30,
+        marginTop:20,
+        textAlign:'center',
+        textAlignVertical:'center',
         width: 200,
         height: 40,
         backgroundColor: "#597eaa",
         color: 'white'
     },
     forgetbutton: {
-        marginTop: 30,
+        marginTop:20,
         width: 200,
         height: 40,
         backgroundColor: "transparent",

@@ -10,15 +10,18 @@ import {
 export default class App extends Component {
   render() {
     return (
+          
       <View style={{ flex: 1, backgroundColor: "#eeeeee" }}>
         <View style={styles.statusbar} />
         <Ok_Screen/>
-       
+           
         <PrimaryNav/>
       </View>
+      
     );
   }
 }
+console.log('ok.......................');
 console.disableYellowBox = true;
 const styles = StyleSheet.create({
   statusbar: {
