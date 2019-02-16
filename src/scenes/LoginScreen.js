@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Image, Text, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import CardView from "../components/CardView";
 import AppText from "../components/AppText";
 import EditText from "../components/EditText";
@@ -11,8 +11,10 @@ export default class LoginScreen extends Component {
             <AppText style={styles.logotext}>RMInno Credential</AppText>
             <EditText hint="Username" style={styles.edittext} />
             <EditText hint="Password" style={styles.edittext} />
-            <Button title="Sign In" style={styles.button} onPress={() => {this.props.navigation.navigate('vendrolist')}} />
-            <Button title="Forget Password" style={styles.forgetbutton} onPress={() => {this.props.navigation.navigate('forgetpass')}} />
+            <Button title="Sign In" style={styles.button} 
+            onPress={() => this.props.navigation.navigate('vendrolist')} />
+            <Button title="Forget Password" style={styles.forgetbutton}
+             onPress={() => this.props.navigation.navigate('forgetpass')} />
         </CardView>)
     }
 }

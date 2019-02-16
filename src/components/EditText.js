@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import {View,Text,TextInput,StyleSheet } from 'react-native';
-import AppText from '../components/AppText'
 export default class EditText extends Component{
   constructor(props){
     super(props);
@@ -12,7 +11,7 @@ export default class EditText extends Component{
   render(){
     return(
       <View style={styles.row}>
-        {/* <AppText style={styles.label}>{this.props.hint}</AppText> */}
+    
         <TextInput
         underlineColorAndroid="transparent"
         keyboardType={this.props.inputType}

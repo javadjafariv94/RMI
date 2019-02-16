@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import { View, Image, Text, StyleSheet,ListView } from "react-native";
-import CardView from "../components/CardView";
-import AppText from "../components/AppText";
-import EditText from "../components/EditText";
-import Button from "../components/Button";
 import VendorItem from "../components/VendorItem";
-import axios from 'axios';
+
 
 const ds = new ListView.DataSource({
     rowHasChanged: (r1, r2) => r1 !== r2
