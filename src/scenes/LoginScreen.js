@@ -12,7 +12,7 @@ export default class LoginScreen extends Component {
             <EditText hint="Username" style={styles.edittext} />
             <EditText hint="Password" style={styles.edittext} />
             <Button title="Sign In" style={styles.button} 
-            onPress={() => this.props.navigation.navigate('vendrolist')} />
+            onPress={() => this.props.navigation.navigate('vendorlist')} />
             <Button title="Forget Password" style={styles.forgetbutton}
              onPress={() => this.props.navigation.navigate('forgetpass')} />
         </CardView>)

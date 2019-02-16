@@ -4,11 +4,11 @@
  import VendorListScreen from "../scenes/VendorListScreen";
  import VendorLoginScreen from "../scenes/VendorLoginScreen";
 
-
+//ok
 const PrimaryNav1 = createStackNavigator({
     login: { screen: LoginScreen },
     forgetpass: { screen: ForgetPassScreen },
-    vendrolist: { screen: VendorListScreen }, 
+    vendorlist: { screen: VendorListScreen }, 
     vendorlogin: { screen: VendorLoginScreen },
 }, {
         headerMode: 'none',
@@ -18,4 +18,4 @@ const PrimaryNav1 = createStackNavigator({
   
       const PrimaryNav = createAppContainer(PrimaryNav1);
 
-export default PrimaryNav 
+export default PrimaryNav; 

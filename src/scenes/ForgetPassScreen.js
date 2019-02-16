@@ -12,7 +12,7 @@ export default class ForgetPassScreen extends Component {
             <EditText inputType='phone-pad' hint="Please enter your phone number" style={styles.edittext} />
             <AppText style={styles.text}>Get a verification code</AppText>
             <View style={styles.row}>
-            <Button title="Text" style={styles.button} onPress={() => { }} />
+            <Button title="Text"  onPress={() => { }} />
             <Button title="Call" style={styles.button} onPress={() => { }} />
             </View>
         </CardView>)
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     button: {
         marginTop: 30,
-        width: 100,
+        width: 10,
         height: 40,
         backgroundColor: "#597eaa",
         color: 'white'
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         color: 'black'
     },
     row:{
-        flexDirection:'row'
+       // flexDirection:'row'
     },
     logotext: {
         fontSize: 20,

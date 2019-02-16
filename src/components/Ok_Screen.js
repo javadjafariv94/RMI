@@ -5,7 +5,7 @@ export default class Ok_Screen extends Component {
   render() {
     return (
       <View>
-        <Text> textInComponent </Text>
+        <Text> textInComponent2 </Text>
       </View>
     )
   }

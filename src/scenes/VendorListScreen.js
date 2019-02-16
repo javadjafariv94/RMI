@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Image, Text, StyleSheet,ListView } from "react-native";
+import { View, StyleSheet,ListView } from "react-native";
 import VendorItem from "../components/VendorItem";
 
 
