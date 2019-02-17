@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
         textAlignVertical:'center',
         marginTop: 30,
         marginRight:20,
-        width: 10,
+        width: 100,
         height: 40,
         backgroundColor: "#597eaa",
         color: 'white'

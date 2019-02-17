@@ -13,7 +13,7 @@ export default class App extends Component {
           
       <View style={{ flex: 1, backgroundColor: "#eeeeee" }}>
         <View style={styles.statusbar} />
-        <Ok_Screen/>
+        {/* <Ok_Screen/> */}
            
         <PrimaryNav/>
       </View>
